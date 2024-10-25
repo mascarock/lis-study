@@ -1,0 +1,32 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore system files
+.DS_Store
+
+# Ignore LaTeX build files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+
+# Ignore backup files
+*.bak
+*.tmp
+*~
+
+# Ignore any other files except .pdf
+*.pdf
+!paper.pdf
+
+# Ignore all image files except specific ones
+*.png
+!complexity_comparison.png
+
+# Ignore any files starting with a dot except for .gitignore
+.*
+!.gitignore
