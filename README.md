@@ -1,17 +1,17 @@
-# LIS Study - Code Challenge
+# LIS Algorithms Analysis and Performance Study
 
-This repository contains a Python project that focuses on analyzing and comparing different algorithms for solving the Longest Increasing Subsequence (LIS) problem. The project includes implementations of various algorithms, performance comparisons, and a detailed report documenting the results.
+This repository contains a Python project that focuses on analyzing and comparing different algorithms for solving the Longest Increasing Subsequence (LIS) problem. The project includes implementations of various algorithms, performance comparisons, and a detailed report documenting the results, highlighting their practical implications in real-world applications, such as blockchain transaction validation.
 
 ## Project Structure
 
 ```
-code-challenge/
+lis-study/
 ├── .gitignore                     # Specifies files and directories to ignore in version control.
 ├── README.md                      # Documentation for this project.
-├── algoanalysis.py                # Python module for performing analysis on LIS algorithms.
-├── algoanalysis2.py               # Additional analysis functions and comparisons for LIS.
-├── main.py                        # Main entry point for running the LIS analysis.
-├── main2.py                       # Alternative script for running additional analysis.
+├── lis_n_squared.py               # Python script implementing the O(n^2) approach for LIS calculation.
+├── lis_nlogn.py                   # Python script implementing the O(n log n) optimized LIS calculation.
+├── algo_analysis.py               # Python module for analyzing and comparing LIS algorithms.
+├── algo_analysis_detailed.py      # Additional detailed analysis functions and comparisons for LIS.
 ├── complexity_comparison.png      # Graphical visualization comparing the time complexity of different algorithms.
 ├── paper.pdf                      # PDF report documenting the findings and analysis.
 ```
@@ -29,7 +29,7 @@ code-challenge/
    
    ```bash
    git clone git@github.com:mascarock/lis-study.git
-   cd code-challenge
+   cd lis-study
    ```
 
 2. **Create and Activate a Virtual Environment**
@@ -49,16 +49,28 @@ code-challenge/
 
 ## Running the Analysis
 
-- **`main.py`**: To run the main LIS analysis, execute:
+- **`lis_n_squared.py`**: To run the O(n^2) LIS analysis, execute:
   
   ```bash
-  python main.py
+  python lis_n_squared.py
   ```
 
-- **`main2.py`**: To run an alternative version of the LIS analysis:
+- **`lis_nlogn.py`**: To run the optimized O(n log n) LIS analysis:
   
   ```bash
-  python main2.py
+  python lis_nlogn.py
+  ```
+
+- **`algo_analysis.py`**: To run the comparison analysis between the O(n^2) and O(n log n) approaches:
+  
+  ```bash
+  python algo_analysis.py
+  ```
+
+- **`algo_analysis_detailed.py`**: To conduct detailed testing and performance analysis on various input types:
+  
+  ```bash
+  python algo_analysis_detailed.py
   ```
 
 ## Outputs
@@ -68,9 +80,11 @@ code-challenge/
 
 ## Files Overview
 
-- **`algoanalysis.py` and `algoanalysis2.py`**: These modules contain different implementations and variations of LIS algorithms, allowing a comparison of their performance and behavior on various input datasets.
-- **`main.py` and `main2.py`**: These scripts serve as entry points to execute the analyses, utilizing the algorithms provided in `algoanalysis.py` and `algoanalysis2.py`.
-- **`paper.pdf`**: This PDF is a comprehensive report of the findings, detailing the results of the algorithmic analysis.
+- **`lis_n_squared.py`**: Contains the traditional **O(n^2)** dynamic programming approach to solve the LIS problem.
+- **`lis_nlogn.py`**: Implements an optimized **O(n log n)** solution using binary search for efficient LIS computation.
+- **`algo_analysis.py`**: Includes both LIS approaches and compares their performance on different input sizes, generating a time complexity graph.
+- **`algo_analysis_detailed.py`**: Tests both algorithms on various types of input (random, sorted, reversed, etc.) and provides detailed logging and analysis.
+- **`paper.pdf`**: This PDF report provides a comprehensive overview of the findings, detailing the differences in time complexity, practical applications, and implications of using different LIS algorithms.
 - **`complexity_comparison.png`**: A graph depicting the comparison of different LIS algorithms, providing insights into their performance characteristics.
 
 ## Contributing
